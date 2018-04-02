@@ -174,7 +174,7 @@ public class ReflectDemo {
     }
 
     /**
-     * 泛型擦除，因为编译后是没有泛型的。
+     * 泛型擦除，因为集合中是伪泛型，编译后的.class文件中是没有泛型的。
      * 定义集合类，泛型String要求向集合中添加Integer类型
      * 利用集合中伪泛型的特点，实际的.class文件中是没有泛型的，用过反射，调用arrayList的class文件中的add()方法就可以了
      * @throws Exception
